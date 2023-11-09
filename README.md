@@ -6,7 +6,7 @@
 
 ## 네트워크 보안
 ### 목록
-1. ['정보보안'이란?](https://github.com/DevNathan/study_security/edit/main/README.md#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80)
+1. ['정보보안'이란?](https://github.com/DevNathan/study_security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80)
 2. 네트워크의 이해
 
 3. 스캐닝
