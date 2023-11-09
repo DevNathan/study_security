@@ -5,10 +5,13 @@
 
 ### 목록
 1. [정보보안](https://github.com/DevNathan/study_security/blob/main/README.md#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88)
-2. 네트워크 보안
-3. 웹 보안
-4. 리버스 엔지니어링
-5. 디지털 포렌식
+   > 1-1 ['정보보안'이란?](https://github.com/DevNathan/study_security/blob/main/README.md#1-1-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80)<br>
+   1-2 [정보보안 전문가가 갖춰야 할 것은 무엇인가?](https://github.com/DevNathan/study_security/edit/main/README.md#1-2-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B0%80-%EA%B0%96%EC%B6%B0%EC%95%BC-%ED%95%A0-%EA%B2%83%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)<br>
+   1-3 [보안의 종류](https://github.com/DevNathan/study_security/edit/main/README.md#1-3-%EB%B3%B4%EC%95%88%EC%9D%98-%EC%A2%85%EB%A5%98)
+3. 네트워크 보안
+4. 웹 보안
+5. 리버스 엔지니어링
+6. 디지털 포렌식
 
 ***
 ## 1. 정보보안
