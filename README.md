@@ -61,7 +61,7 @@
 	1) C/C++
 	2) JAVA
 	3) Python
-     4) Assembly
+ 	4) Assembly
 
 ### 1-3 보안의 종류
 #### I. 관리적 보안
