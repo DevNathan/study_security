@@ -79,12 +79,12 @@
      전산 환경에서 정보 자산을 자산의 유출, 파괴 등으로부터 보호하기 위한 기술적 통제 방법.
      네트워크 보안 / PC 보안 / 서버 보안 / 접근제어
 
-#### IV. 정보보안의 3대 원칙, CIA
-	1) Confidentiality (기밀성)
+### 1-4 정보보안의 3대 원칙, CIA
+#### I.Confidentiality (기밀성)
 
-  	2) Integrity (무결성)
+#### II. Integrity (무결성)
 
-   	3) Availability  (가용성)
+#### III. Availability  (가용성)
 
 ## 네트워크 보안
 
