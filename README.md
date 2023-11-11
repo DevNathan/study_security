@@ -182,10 +182,11 @@
 		물리적단계의 보안 시스템은 사실상 존재하지 않는다
 
 2. DataLink Layer
-VPN 기술이 사용되며 VPN의 터널링 기술을 통해 암호화가 가능하다.
-	- PPTP : MicroSoft 개발
-	- L2F : Cisco 개발
-	- L2TP : IETF 개발
+
+		VPN 기술이 사용되며 VPN의 터널링 기술을 통해 암호화가 가능하다.
+		- PPTP : MicroSoft 개발
+		- L2F : Cisco 개발
+		- L2TP : IETF 개발
 
 3. Network Layer
 
@@ -207,7 +208,7 @@ VPN 기술이 사용되며 VPN의 터널링 기술을 통해 암호화가 가능
 
 7. Application Layer
 
-		HTTTPS, PGP, PEM과 같은 암호화 기술들이 있다.
+		HTTPS, PGP, PEM과 같은 암호화 기술들이 있다.
 
 ## 3. 시스템 보안
 
