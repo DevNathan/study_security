@@ -166,7 +166,50 @@
 ***
 ## 2. 네트워크 보안
 
-## 시스템 보안
+***
+### 2-1 OSI 7 Layer Model
+![osi-model-7-layers-1](https://github.com/DevNathan/study_security/assets/142222091/651a0a56-6644-4106-9019-a52cca011e90)
+
+ 	OSI 7 Layer Model은 네트워크에서 통신이 일어나는 과정을 7단계를 나눔으로서
+  	통신이 이뤄지는 과정을 파악하기 쉽게 하기 위해 국제 표준화 기구(ISO)에서 정의한
+   	네트워크 표준 모델이다.
+   	하지만 실제 네트워크에서는 모든 상황이 유동적으로 이뤄지므로
+    OSI모델은 단순 참조용으로만 사용하는 것이 좋다.
+
+#### OSI 7 Layer Model과 네트워크 보안 시스템
+1. Phisical Layer
+
+		물리적단계의 보안 시스템은 사실상 존재하지 않는다
+
+2. DataLink Layer
+VPN 기술이 사용되며 VPN의 터널링 기술을 통해 암호화가 가능하다.
+	- PPTP : MicroSoft 개발
+	- L2F : Cisco 개발
+	- L2TP : IETF 개발
+
+3. Network Layer
+
+		VPN에서 IPSec 기술을 통해 암호화가 가능하다.
+
+4. Transport Layer
+
+		SSL/TLS 기술을 통해 암호화가 가능하다.
+		SSL/TLS 기술은 전송 계층부터 어플리케이션 계층까지 수행한다.
+
+5. Session Layer
+
+		SSL
+
+6. Presentation Layer
+
+		데이터 표현 형식을 통해 암호화가 가능하다.
+		예를 들어 JPG는 GIF를 통해 읽을 수 없으며 만약 이렇게 수행할 시 '깨져서' 읽지 못하게 된다.
+
+7. Application Layer
+
+		HTTTPS, PGP, PEM과 같은 암호화 기술들이 있다.
+
+## 3. 시스템 보안
 
 ## 웹 보안
 
