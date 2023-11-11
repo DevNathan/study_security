@@ -6,9 +6,13 @@
 ### 목록
 1. [정보보안](https://github.com/DevNathan/study_security/blob/main/README.md#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88)
    > 1-1 ['정보보안'이란?](https://github.com/DevNathan/study_security/blob/main/README.md#1-1-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80)<br>
-   1-2 [정보보안 전문가가 갖춰야 할 것은 무엇인가?](https://github.com/DevNathan/study_security/blob/main/README.md#1-2-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B0%80-%EA%B0%96%EC%B6%B0%EC%95%BC-%ED%95%A0-%EA%B2%83%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)<br>
-   1-3 [보안의 종류](https://github.com/DevNathan/study_security/blob/main/README.md#1-3-%EB%B3%B4%EC%95%88%EC%9D%98-%EC%A2%85%EB%A5%98)<br>
-   1-4 [정보보안의 3대 원칙, CIA](https://github.com/DevNathan/study_security/blob/main/README.md#1-4-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%98-3%EB%8C%80-%EC%9B%90%EC%B9%99-cia)
+   > 1-2 [정보보안 전문가가 갖춰야 할 것은 무엇인가?](https://github.com/DevNathan/study_security/blob/main/README.md#1-2-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B0%80-%EA%B0%96%EC%B6%B0%EC%95%BC-%ED%95%A0-%EA%B2%83%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)<br>
+   > 1-3 [보안의 종류](https://github.com/DevNathan/study_security/blob/main/README.md#1-3-%EB%B3%B4%EC%95%88%EC%9D%98-%EC%A2%85%EB%A5%98)<br>
+   > 1-4 [정보보안의 3대 원칙, CIA](https://github.com/DevNathan/study_security/blob/main/README.md#1-4-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%98-3%EB%8C%80-%EC%9B%90%EC%B9%99-cia)<br>
+   > 1-5 [정보보안의 5가지 핵심요소들](https://github.com/DevNathan/study_security/blob/main/README.md#1-5-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%98-5%EA%B0%80%EC%A7%80-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C%EB%93%A4)<br>
+   > 1-6 [(정보)자산과 위험성](https://github.com/DevNathan/study_security/blob/main/README.md#1-6-%EC%A0%95%EB%B3%B4%EC%9E%90%EC%82%B0%EA%B3%BC-%EC%9C%84%ED%97%98%EC%84%B1)<br>
+   > 1-7 [공격(해킹)의 기초 단계](https://github.com/DevNathan/study_security/blob/main/README.md#1-7-%EA%B3%B5%EA%B2%A9%ED%95%B4%ED%82%B9%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%8B%A8%EA%B3%84)
+   
 3. 네트워크 보안
 4. 웹 보안
 5. 리버스 엔지니어링
@@ -108,7 +112,7 @@
  - 보안 솔루션 : Firewall, IDS, IPS, UTM
 
 ***
-### 정보보안의 5가지 핵심요소들
+### 1-5 정보보안의 5가지 핵심요소들
 #### Identification (식별)
 	서버 및 시스템이 유저를 인정해주는 것을 의미한다.
  	식별에 대한 신청은 사용자가 하게 되고 인증은 시스템이 하게된다.
@@ -126,7 +130,7 @@
 
 
 ***
-### (정보)자산과 위험성
+### 1-6 (정보)자산과 위험성
 ![images](https://github.com/DevNathan/study_security/assets/142222091/1a838f7c-5ebf-4f75-aaf8-871a616a14ac)
 
 	정보 자산에 대한 위협이 커지면 위험성도 당연히 높아지게 된다.
@@ -148,8 +152,19 @@
   	공격자들은 그 취약점을 파고들어 정보 자산에대한 공격을 하게 되니 이 취약점을 잘 방어하는 것이
    	정보보안에 있어 가장 중점이 되겠다.
 
+***
+### 1-7 공격(해킹)의 기초 단계
+1. 정보 수집 ❗
+	1) 정찰(reconnaissance)
+	2) 스캐닝 및 취약점 분석(scanning and enumeration)
+2. 침투 및 시스템 장악
+3. 공격 전이
+	1) 권한상승
+	2) 백도어 관리
+	3) 침투 흔적 지우기
 
-## 네트워크 보안
+***
+## 2. 네트워크 보안
 
 ## 시스템 보안
 
