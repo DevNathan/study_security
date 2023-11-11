@@ -13,10 +13,10 @@
    > 1-6 [(정보)자산과 위험성](https://github.com/DevNathan/study_security/blob/main/README.md#1-6-%EC%A0%95%EB%B3%B4%EC%9E%90%EC%82%B0%EA%B3%BC-%EC%9C%84%ED%97%98%EC%84%B1)<br>
    > 1-7 [공격(해킹)의 기초 단계](https://github.com/DevNathan/study_security/blob/main/README.md#1-7-%EA%B3%B5%EA%B2%A9%ED%95%B4%ED%82%B9%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%8B%A8%EA%B3%84)
    
-3. 네트워크 보안
-4. 웹 보안
-5. 리버스 엔지니어링
-6. 디지털 포렌식
+2. [네트워크 보안](https://github.com/DevNathan/study_security/blob/main/README.md#2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88)
+3. 웹 보안
+4. 리버스 엔지니어링
+5. 디지털 포렌식
 
 ***
 ## 1. 정보보안
