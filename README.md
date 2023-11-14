@@ -210,6 +210,7 @@
 
 		HTTPS, PGP, PEM과 같은 암호화 기술들이 있다.
 
+***
 ### 네트워크 통신과정
 #### 네트워크 데이터 단위
 <img width="307" alt="스크린샷 2023-11-13 210251" src="https://github.com/DevNathan/study_security/assets/142222091/df8472ce-ee91-4feb-a064-d1e19edf8e30">
@@ -222,7 +223,7 @@
 4. Trasport : Segment
 5. Application 및 나머지 : Message
 
-#### 데이터 생성 과정 및 전송
+#### 데이터 캡슐화(encapsulation) 과정 및 전송
 	전송을 위해 계속해서 데이터를 헤더에 감싸게 되는 구조이다.
 
 1. 응용단 - Message
@@ -231,6 +232,66 @@
 4. 데이터링크단 - DH(DataLinkHeader) | NH | TH | Trailer(데이터링크단에서는 헤더뿐만아니라 꼬리에 trailer가 더 붙는다.)
 5. 피지컬단(NIC) - 데이터링크단의 Frame을 NIC(LAN)이 Bit단위로 변환시켜 전송한다.
 
+#### 데이터 역캡슐화(decapsulation) 과정
+1. Switch 혹은 Bridge를 통해 DH 제거, NH를 드러나게 함
+2. Router/L3 Switch가 NH의 IP주소를 읽어내고 NH를 제거,
+3. L4 Switch에서 TH 제거
+4. 메시지만이 남게됨.
+<br><br>
+컴퓨터는 이모든 전과정을 수행할 수 있는 스위치, 라우터 등이 다 있다.
+
+#### 헤더들의 구조
+1. ARP
+2. Ethernet
+3. IP
+4. TCP
+5. UDP
+
+#### 네트워크 토폴로지
+<img width="436" alt="스크린샷 2023-11-13 210450" src="https://github.com/DevNathan/study_security/assets/142222091/84693499-ba8f-4497-8264-f814e57e8fc3">
+
+	만약 내가 1.1.1.1 컴퓨터에서 4.4.4.1로 메시지를 보낸다고 가정하자.
+	1. 내 메시지를 캡슐화를 하여 NIC가 광네트워크로 보내는 1.1.1.3 라우터까지 도착하게 되면
+ 	역캡슐화를 통해 NH를 읽어 IP주소를 확인한다.
+  	2. 다시 캡슐화를 하여 광역 네트워크를 통해 4.4.4.3 라우터까지 전송,
+   	역캡슐화를 통해 IP를 읽어낸다.
+    	3. 다시 캡슐화를 하여 읽어낸 IP를 토대로 맞는 주소로 전송한다.
+     	4. 4.4.4.1 컴퓨터에 도착하면 역캡슐화를 진행하고 
+      	소스IP(전송자IP)와 데스티네이션IP(송신자IP)를 읽어 맞는 주소인지 확인한다.
+      	맞는 주소일 시 역캡슐화를 지속 진행하여 TH에서 포트번호를 읽는다.
+       	5. 예를 들어 80번 포트로 보내져서 APACHE 서버에서 읽어내면 이를 토대로 화면에 출력되게 된다.
+
+ 	이와 같이 알맞은 IP로 보내질때까지 캡슐화/역캡슐화 과정이 계속 반복적으로 이뤄지게 된다.
+  	하지만 네트워크 전송과정에서 결국 끝까지 존재하게 되는 것은 TH이다.
+  	Data Link에서는 flow, Error, Link, Point to Point로 불리지만
+   	Transport에서는 End to End로 불리게 되는 이유다.
+
+***
+### 네트워크 식별자
+1. MAC
+2. IP
+3. Port
+
+#### 포트번호
+	포트번호 총 65536개가 있다. 분류는 3개로 나뉜다.
+ 	1) Well-known Post : 0 ~ 1023
+  	2) Registerd : 1024 ~ 49151
+   	3) Dynamic : 49152 ~ 65535
+
+#### 알아야할 포트 번호들
+	FTP - 21/20(C/D)
+	SSH - 22
+	TELNET 23
+	HTTP - 80
+	POP3 - 110
+	IMAP - 143
+
+	DHCP 67,68
+	TFTP 69
+	DNS - 53
+	SNMP - 161,162
+
+	SSL/TLS - 443
 
 
 ## 3. 시스템 보안
