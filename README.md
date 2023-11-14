@@ -268,6 +268,8 @@
 
 ***
 ### 네트워크 식별자
+<img width="446" alt="스크린샷 2023-11-13 214957" src="https://github.com/DevNathan/study_security/assets/142222091/10e07fb2-b5ac-48d6-abc1-eceeb0517a1d">
+
 1. MAC
 2. IP
 3. Port
