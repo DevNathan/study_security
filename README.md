@@ -210,6 +210,29 @@
 
 		HTTPS, PGP, PEM과 같은 암호화 기술들이 있다.
 
+### 네트워크 통신과정
+#### 네트워크 데이터 단위
+<img width="307" alt="스크린샷 2023-11-13 210251" src="https://github.com/DevNathan/study_security/assets/142222091/df8472ce-ee91-4feb-a064-d1e19edf8e30">
+
+1. Phisical : Bits
+2. Data Link : Frame
+3. Network : Packet
+
+		Packet은 항상 동일한 양으로 잘라진다는 특징이다 있다. ❗
+4. Trasport : Segment
+5. Application 및 나머지 : Message
+
+#### 데이터 생성 과정 및 전송
+	전송을 위해 계속해서 데이터를 헤더에 감싸게 되는 구조이다.
+
+1. 응용단 - Message
+2. 전송단 - TH(TrasportHeader) | Message
+3. 네트워크단 - NH(NetworkHeader) | TH | Message
+4. 데이터링크단 - DH(DataLinkHeader) | NH | TH | Trailer(데이터링크단에서는 헤더뿐만아니라 꼬리에 trailer가 더 붙는다.)
+5. 피지컬단(NIC) - 데이터링크단의 Frame을 NIC(LAN)이 Bit단위로 변환시켜 전송한다.
+
+
+
 ## 3. 시스템 보안
 
 ## 웹 보안
