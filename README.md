@@ -5,7 +5,7 @@
 
 	1) Kali linux -> www.kali.org
 	2) CentOS 7 -> www.centos.org
-    	3) Windows 10
+	3) Windows 10
 	4) Windows 2016 server
 
 # 보안
