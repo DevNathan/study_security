@@ -1,3 +1,13 @@
+조남호 | Nathan Cho<br>
+수업 일수 11.08.23 ~ 진행중
+<br><br>
+수업 중 사용한 OS
+
+		1) Kali linux -> www.kali.org
+	2) CentOS 7 -> www.centos.org
+    	3) Windows 10
+	4) Windows 2016 server
+
 # 보안
 
 보안에 있어서 가장 중요한 것들은 네트워크와 시스템 보안이 제일 중요하다. 이는 모든 보안의 기본이 되기 때문이다.<br>
