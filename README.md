@@ -3,7 +3,7 @@
 <br><br>
 수업 중 사용한 OS
 
-		1) Kali linux -> www.kali.org
+	1) Kali linux -> www.kali.org
 	2) CentOS 7 -> www.centos.org
     	3) Windows 10
 	4) Windows 2016 server
