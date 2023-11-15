@@ -342,7 +342,7 @@
 5. Operation (2바이트)
 
 		요청 패킷인지 응답 패킷인지 확인한다.
-6. Source Hardware Address
+6. Source Hardware Address 
 
 		송신자의 하드웨어 주소(MAC) 주소를 나타내는 필드이다.
 7. Source Protocol Address
@@ -356,6 +356,25 @@
 
 		목적지의 IP 주소를 정의한다.
 
+#### IPv4 Header
+	IP 헤더는 IP패킷의 앞부분에 위치하며 IP 주소를 비롯한 각종 제어정보를 담고 있다. 
+	IPv4 헤더는 고정 20바이트, 옵션 0~40바이트이다. 즉, 최소 용량 20바이트이다.
+
+1. Version
+
+		IP의 종류를 알려준다. (IPv4, IPv6)
+2. IHL(IP Header Length)
+
+		IP 헤더의 길이를 나타낸다.
+3. TOS(Type of Service)
+
+		Service 타입을 알려준다.
+4. Total Length
+
+   		헤더와 데이터를 합한 IP 패킷 전체 길이를 바이트 단위로 나타낸다. (최대 65,535바이트)
+5. Identification(식별자)
+
+   		IP 패킷을 식별하기 위해 사용한다. 분할 되어 전송된 데이터를 식별할 수 있다..
 
 ## 3. 시스템 보안
 
