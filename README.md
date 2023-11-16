@@ -434,7 +434,12 @@
 
 ### TCP 3-WAY Handshake + SSL/TLS
 
-
+***
+## 공격과 방어
+### 공격
+#### 1단계, 정보 수집(Information Gathering)
+	ping - 상대방의 IP주소를 알아낼 수 있다.
+ 	traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
 
 ## 3. 시스템 보안
 
