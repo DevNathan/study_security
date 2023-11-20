@@ -14,16 +14,16 @@
 네트워크 보안과 시스템 보안은 마치 사회의 SOC와도 같은 개념이다.
 
 ### 목록
-1. [정보보안](https://github.com/DevNathan/study_security/blob/main/README.md#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88)
-   > 1-1 ['정보보안'이란?](https://github.com/DevNathan/study_security/blob/main/README.md#1-1-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80)<br>
-   > 1-2 [정보보안 전문가가 갖춰야 할 것은 무엇인가?](https://github.com/DevNathan/study_security/blob/main/README.md#1-2-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B0%80-%EA%B0%96%EC%B6%B0%EC%95%BC-%ED%95%A0-%EA%B2%83%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)<br>
-   > 1-3 [보안의 종류](https://github.com/DevNathan/study_security/blob/main/README.md#1-3-%EB%B3%B4%EC%95%88%EC%9D%98-%EC%A2%85%EB%A5%98)<br>
-   > 1-4 [정보보안의 3대 원칙, CIA](https://github.com/DevNathan/study_security/blob/main/README.md#1-4-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%98-3%EB%8C%80-%EC%9B%90%EC%B9%99-cia)<br>
-   > 1-5 [정보보안의 5가지 핵심요소들](https://github.com/DevNathan/study_security/blob/main/README.md#1-5-%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EC%9D%98-5%EA%B0%80%EC%A7%80-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C%EB%93%A4)<br>
-   > 1-6 [(정보)자산과 위험성](https://github.com/DevNathan/study_security/blob/main/README.md#1-6-%EC%A0%95%EB%B3%B4%EC%9E%90%EC%82%B0%EA%B3%BC-%EC%9C%84%ED%97%98%EC%84%B1)<br>
-   > 1-7 [공격(해킹)의 기초 단계](https://github.com/DevNathan/study_security/blob/main/README.md#1-7-%EA%B3%B5%EA%B2%A9%ED%95%B4%ED%82%B9%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%8B%A8%EA%B3%84)
+1. [정보보안](#1-정보보안)
+   > 1-1 ['정보보안'이란?](#1-1-정보보안이란)<br>
+   > 1-2 [정보보안 전문가가 갖춰야 할 것은 무엇인가?]<br>
+   > 1-3 [보안의 종류]<br>
+   > 1-4 [정보보안의 3대 원칙, CIA]<br>
+   > 1-5 [정보보안의 5가지 핵심요소들]<br>
+   > 1-6 [(정보)자산과 위험성]<br>
+   > 1-7 [공격(해킹)의 기초 단계]
    
-2. [네트워크 보안](https://github.com/DevNathan/study_security/blob/main/README.md#2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88)
+2. [네트워크 보안]
 3. 웹 보안
 4. 리버스 엔지니어링
 5. 디지털 포렌식
@@ -486,7 +486,7 @@
 			O : 무응답, C : ICMP Unreachable
 
 	1) nmap
-	nmap의 여러 사용법은 [부록](#스캐닝도구-nmap)에서 확인.
+	nmap의 여러 사용법은 [부록](#스캐닝-도구-nmap)에서 확인.
 
 ## 3. 시스템 보안
 
