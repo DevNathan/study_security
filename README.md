@@ -485,7 +485,8 @@
 		4) UDP 스캔
 			O : 무응답, C : ICMP Unreachable
 
-
+	1) nmap
+	nmap의 여러 사용법은 [부록]에서 확인.
 
 ## 3. 시스템 보안
 
@@ -497,6 +498,7 @@
 
 ## 디지털 포렌식
 
+***
 # 부록
 
 ## 암호 알고리즘
@@ -536,3 +538,40 @@
      > MD5(126), SHA-1(160), SHA-2(SHA-224, 256, 384, 512)
 #### 2-2 비암호학적 해시함수
      > Checksum, CRC-32, FCS
+
+***
+## 스캐닝 도구, nmap
+	nmap은 스캐닝에 있어 강력한 공격 도구 이며 
+ 	사용자는 여러 옵션들을 선택하여 nmap을 이용할 수 있다.
+
+- -st<br>
+	<img width="604" alt="스크린샷 2023-11-20 222337" src="https://github.com/DevNathan/study_security/assets/142222091/c820c69e-2e32-4599-98b2-c087045ca46e"><br>
+  	TCP Scan을 시도한다.
+- -sU<br>
+	<img width="705" alt="스크린샷 2023-11-20 202211" src="https://github.com/DevNathan/study_security/assets/142222091/928d7780-5e37-4d2e-ab75-a0fcaae1af12"><br>
+  	UDP Scan을 시도한다.
+- -sS<br>
+	<img width="583" alt="스크린샷 2023-11-20 204749" src="https://github.com/DevNathan/study_security/assets/142222091/cd9dd170-f716-434a-a9b4-ad98274b7706"><br>
+	SYN Scan을 시도한다.
+- -sF<br>
+	<img width="550" alt="스크린샷 2023-11-20 204828" src="https://github.com/DevNathan/study_security/assets/142222091/2e9108af-1fc8-4415-a350-9d800f9a615a"><br>
+	FIN Scan을 시도한다.
+- -sN<br>
+	<img width="589" alt="스크린샷 2023-11-20 204815" src="https://github.com/DevNathan/study_security/assets/142222091/8710e853-5c47-4272-a5cf-10318b03c32d"><br>
+	NULL Scan을 시도한다.
+- -sX<br>
+	<img width="585" alt="스크린샷 2023-11-20 204903" src="https://github.com/DevNathan/study_security/assets/142222091/b631ed8e-a9cd-41e2-8c85-98e52834f3f8"><br>
+ 	X-MAS Scan을 시도한다.
+<br><br>
+- -sP<br>
+	ping Scan을 시도한다.
+- -sV<br>
+	서비스의 버전 정보를 확인할 수 있다.
+<br><br>
+- -O<br>
+  	운영체제 정보를 확인할 수 있다.
+- -v<br>
+	스캔 과정을 출력해준다.
+- -A<br>
+	스캔 과정을 아주 자세히 출력해준다.
+<br><br>
