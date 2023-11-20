@@ -449,7 +449,7 @@
 			-r : 라우팅 테이블 출력
    		ipconfig(win) : Window에서 IP 주소, 서브넷마스트, 게이트웨이를 보여준다
   	  		/all : IP, MAC, DNS 등등 모든 것을 보여준다
- 	     		/flushdns : DNS CACHE 삭제
+			/flushdns : DNS CACHE 삭제
 			/displaydns : DNS CACHE 정보 출력
 		ifconfing(Linux) : Linux 서버에서 인터페이스 정보 출력 IP, MAC 등등
 		nslookup : DNS서버 정보 출력
