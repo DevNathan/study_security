@@ -456,8 +456,32 @@
  		e-mail : email을 통해서도 많은 정보를 얻을 수 있다
  	 	Portal sitte : 포털사이트를 통해서도 ip정보를 얻을 수 있다.
  	  	Visual Router
-2. Scanning(스캐닝)
-   
+2. Scanning(TCP PORTSCAN)
+	1) 오픈스캔
+	
+ 			TCP 3way Handshake 이후 상대방의 포트를 확인하는 것.
+    			다만 이렇게 할 시 상대방에게 나의 IP주소가 노출된다는 치명적 단점이 있다.
+
+ 			포트 오픈시 : SYN+ACK
+    			포트 클로즈시 : RST
+	2) 하프오픈스캔
+
+	  		핸드쉐이크 이뤄지고 상대방의 포트를 확인한 뒤
+			reset패킷을 보내 자신의 IP를 숨기는 방법이다.
+
+			포트 오픈시 : SYN+ACK
+    			포트 클로즈시 : RST
+	3) 스텔스 스캔
+
+			- FIN을 먼저 보낼 시 / O : 무응답, C : RST
+			- NULL 스캔(UAPRSF 플래그 전부 OFF) / O : 무응답, C : RST
+			- X-MAS 스캔(UAPRSF 플래그 전부 ON) / O : 무응답, C : RST
+			- ACK 스캔 / 방화벽
+
+※ 넓은 범위에서 하프오픈 스캔(SYN)까지 스텔스 스캔의 범주로 볼 수 있다(로그가 남지 않기 때문).
+	4) UDP 스캔
+
+			O : 무응답, C : ICMP Unreachable
 
 ## 3. 시스템 보안
 
