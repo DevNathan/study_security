@@ -437,9 +437,27 @@
 ***
 ## 공격과 방어
 ### 공격
-#### 1단계, 정보 수집(Information Gathering)
-	ping - 상대방의 IP주소를 알아낼 수 있다.
- 	traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
+#### 1단계
+1. 정보 수집(Information Gathering)
+
+		ping - 상대방의 IP주소를 알아낼 수 있다.
+ 		traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
+  		netstat - 네트워크 상태 확인
+   			<옵션>
+     			-a : 모든 네트워크
+       			-n : 서비스를 숫자로 출력
+	 		-r : 라우팅 테이블 출력
+   		ipconfig(win) : Window에서 IP 주소, 서브넷마스트, 게이트웨이를 보여준다
+  	  		/all : IP, MAC, DNS 등등 모든 것을 보여준다
+ 	     		/flushdns : DNS CACHE 삭제
+			/displaydns : DNS CACHE 정보 출력
+		ifconfing(Linux) : Linux 서버에서 인터페이스 정보 출력 IP, MAC 등등
+		nslookup : DNS서버 정보 출력
+ 		e-mail : email을 통해서도 많은 정보를 얻을 수 있다
+ 	 	Portal sitte : 포털사이트를 통해서도 ip정보를 얻을 수 있다.
+ 	  	Visual Router
+2. Scanning(스캐닝)
+   
 
 ## 3. 시스템 보안
 
