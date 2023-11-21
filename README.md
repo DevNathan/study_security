@@ -587,3 +587,14 @@
 - -A<br>
 	스캔 과정을 아주 자세히 출력해준다.
 <br><br>
+보안 솔루션 우회
+
+		-T0 : Paranoid
+		-T1 : Sneaky
+		-T2 : Polite
+		-T3 : Normal(Default)
+		-T4 : Aggressive
+		-T5 : Insane
+
+  		※ 5에 가까울 수록 빠르며 0에 가까울수록 nmap 스캐닝 속도가 느려진다.
+
