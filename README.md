@@ -534,9 +534,6 @@
 
 	3) 추측 공격(guessing attack)
 
-			
-
-***
 #### hydra
 	hydra [옵션] [설정값] [공격 대상 IP주소/도메인]
 	(hydra -l test -p 123456 ssh://192.168.-.-)
