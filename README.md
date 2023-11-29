@@ -29,7 +29,7 @@
    > 2-4 [이더넷 프레임](#2-4-이더넷-프레임)<br>
    > 2-5 [TCP와 UDP의 차이점](#2-5-tcp와-udp의-차이점)<br>
    > 2-6 [TCP 통신연결 과정](#2-6-tcp-통신연결-과정)<br>
-3. [네트워크 공격과 방어](#2-네트워크-공격과-방어)
+3. [네트워크 공격과 방어](#3-네트워크-공격과-방어)
 4. 시스템 보안
 5. 웹 보안
 6. 리버스 엔지니어링
@@ -447,9 +447,9 @@
 ### TCP 3-WAY Handshake + SSL/TLS
 
 ***
-## 2. 네트워크 공격과 방어
-### 공격
-#### 1. 정보 수집(Information Gathering)
+## 3. 네트워크 공격과 방어
+공격
+### 3-1 정보 수집(Information Gathering)
 		ping - 상대방의 IP주소를 알아낼 수 있다.
  		traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
   		netstat - 네트워크 상태 확인
@@ -466,7 +466,7 @@
  		e-mail : email을 통해서도 많은 정보를 얻을 수 있다
  	 	Portal sitte : 포털사이트를 통해서도 ip정보를 얻을 수 있다.
  	  	Visual Router
-#### 2. Scanning(TCP PORTSCAN)
+### 3-2 Scanning(TCP PORTSCAN)
 		1) 오픈스캔
 	
  			TCP 3way Handshake 이후 상대방의 포트를 확인하는 것.
@@ -520,7 +520,7 @@
    	5) dnsenum
   
 			dnsenum [옵션] [도메인]
-   #### 3. 패스워드 공격
+### 3-3 패스워드 공격
 	1) 무차별 대입 공격(brute force attack 
 
 			무작위로 비밀번호를 조합해서 맞는 비밀번호를 찾아내는 방식
@@ -563,7 +563,7 @@
   	이렇게 만들어진 파일은 아래처럼 사용 가능
    	hydra -L crunch -p 123456 -s 2121 ftp://192.168.204.101 -V -f
 
-4. 스푸핑(Spoofing)
+### 3-4 스푸핑(Spoofing)
 
 
 ## 3. 시스템 보안
