@@ -450,76 +450,82 @@
 ## 3. 네트워크 공격과 방어
 공격
 ### 3-1 정보 수집(Information Gathering)
-		ping - 상대방의 IP주소를 알아낼 수 있다.
- 		traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
-  		netstat - 네트워크 상태 확인
-   			<옵션>
-			-a : 모든 네트워크
-			-n : 서비스를 숫자로 출력
-			-r : 라우팅 테이블 출력
-   		ipconfig(win) : Window에서 IP 주소, 서브넷마스트, 게이트웨이를 보여준다
-  	  		/all : IP, MAC, DNS 등등 모든 것을 보여준다
-			/flushdns : DNS CACHE 삭제
-			/displaydns : DNS CACHE 정보 출력
+	ping - 상대방의 IP주소를 알아낼 수 있다.
+ 	traceroute - 목적지 까지 거치게 되는 모든 라우터들의 IP를 알아낼 수 있다(총 3번 시도).
+  	netstat - 네트워크 상태 확인
+   		<옵션>
+		-a : 모든 네트워크
+		-n : 서비스를 숫자로 출력
+		-r : 라우팅 테이블 출력
+   	ipconfig(win) : Window에서 IP 주소, 서브넷마스트, 게이트웨이를 보여준다
+  		/all : IP, MAC, DNS 등등 모든 것을 보여준다
+		/flushdns : DNS CACHE 삭제
+		/displaydns : DNS CACHE 정보 출력
 		ifconfing(Linux) : Linux 서버에서 인터페이스 정보 출력 IP, MAC 등등
 		nslookup : DNS서버 정보 출력
  		e-mail : email을 통해서도 많은 정보를 얻을 수 있다
  	 	Portal sitte : 포털사이트를 통해서도 ip정보를 얻을 수 있다.
  	  	Visual Router
+
 ### 3-2 Scanning(TCP PORTSCAN)
-		1) 오픈스캔
+1) 오픈스캔
 	
- 			TCP 3way Handshake 이후 상대방의 포트를 확인하는 것.
-    			다만 이렇게 할 시 상대방에게 나의 IP주소가 노출된다는 치명적 단점이 있다.
+		TCP 3way Handshake 이후 상대방의 포트를 확인하는 것.
+		다만 이렇게 할 시 상대방에게 나의 IP주소가 노출된다는 치명적 단점이 있다.
 
- 			포트 오픈시 : SYN+ACK
-    			포트 클로즈시 : RST
+		포트 오픈시 : SYN+ACK
+   		포트 클로즈시 : RST
    
-		2) 하프오픈스캔
-	  		핸드쉐이크 이뤄지고 상대방의 포트를 확인한 뒤
-			reset패킷을 보내 자신의 IP를 숨기는 방법이다.
-
-			포트 오픈시 : SYN+ACK
-    			포트 클로즈시 : RST
+2) 하프오픈스캔
    
-		3) 스텔스 스캔
-			- FIN을 먼저 보낼 시 / O : 무응답, C : RST
-			- NULL 스캔(UAPRSF 플래그 전부 OFF) / O : 무응답, C : RST
-			- X-MAS 스캔(UAPRSF 플래그 전부 ON) / O : 무응답, C : RST
-			- ACK 스캔 / 방화벽
+		핸드쉐이크 이뤄지고 상대방의 포트를 확인한 뒤
+		reset패킷을 보내 자신의 IP를 숨기는 방법이다.
 
-			※ 넓은 범위에서 하프오픈 스캔(SYN)까지
-				스텔스 스캔의 범주로 볼 수 있다(로그가 남지 않기 때문).
+		포트 오픈시 : SYN+ACK
+    		포트 클로즈시 : RST
    
-		4) UDP 스캔
-			O : 무응답, C : ICMP Unreachable
+3) 스텔스 스캔
 
-	1) nmap<br>
- 
-			nmap의 여러 사용법은 [부록 참조](#스캐닝-도구-nmap).
-	2) dnsmap
+		- FIN을 먼저 보낼 시 / O : 무응답, C : RST
+		- NULL 스캔(UAPRSF 플래그 전부 OFF) / O : 무응답, C : RST
+		- X-MAS 스캔(UAPRSF 플래그 전부 ON) / O : 무응답, C : RST
+		- ACK 스캔 / 방화벽
 
-			dnsmap [도메인] [옵션]
+		※ 넓은 범위에서 하프오픈 스캔(SYN)까지
+			스텔스 스캔의 범주로 볼 수 있다(로그가 남지 않기 때문).
+   
+4) UDP 스캔
 
-			-r [파일명] : 파일로 저장
-    			-w : 워드 목록 사용(텍스트 파일에 워드를 넣고서 사용하면 텍스트 파일에 있는 것만 탐색하게됨
-			-c : 콤마 구분자 사용, 파일로 저장
-	3) dnsrecon
+   		O : 무응답, C : ICMP Unreachable
 
-			dnsrecon [옵션] [도메인]
+스캐닝 도구
+
+1) nmap<br>
+ nmap의 여러 사용법은 [부록 참조](#스캐닝-도구-nmap).
+2) dnsmap
+
+		dnsmap [도메인] [옵션]
+
+		-r [파일명] : 파일로 저장
+    		-w : 워드 목록 사용(텍스트 파일에 워드를 넣고서 사용하면 텍스트 파일에 있는 것만 탐색하게됨
+		-c : 콤마 구분자 사용, 파일로 저장
+3) dnsrecon
+
+		dnsrecon [옵션] [도메인]
 			
-			- -d 도메인
-    			- -x, --xml : XML 형식으로 저장
-    			- -j, --json : JSON 형식으로 저장
-    			- --db : DB테이블 생성 및 저장
-	4) fierce
+		- -d 도메인
+    		- -x, --xml : XML 형식으로 저장
+    		- -j, --json : JSON 형식으로 저장
+    		- --db : DB테이블 생성 및 저장
+4) fierce
 
- 			fierce [옵션] [도메인]
+		fierce [옵션] [도메인]
 
-			- --domain 도메인
-   	5) dnsenum
+		- --domain 도메인
+5) dnsenum
   
-			dnsenum [옵션] [도메인]
+		dnsenum [옵션] [도메인]
+
 ### 3-3 패스워드 공격
 	1) 무차별 대입 공격(brute force attack 
 
