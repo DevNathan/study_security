@@ -34,6 +34,7 @@
    > 3-2 [Scanning(TCP PORTSCAN)](#3-2-scanningtcp-portscan)<br>
    > 3-3 [패스워드 공격](#3-3-패스워드-공격)<br>
    > 3-4 [스푸핑(Spoofing)](#3-4-스푸핑spoofing)
+   > 3-5 [패킷 스니핑(Sniffing)](#3-5-패킷-스니핑sniffing)
 4. 시스템 보안
 5. 웹 보안
 6. 리버스 엔지니어링
@@ -619,6 +620,10 @@
 			/etc/ettercap/etter.dns
 			예) www.naver.com A 192.168.-.-
 		4. 가짜 사이트 유도/개인정보 탈취
+			setoolkit
+
+### 3-5 패킷 스니핑(Sniffing)
+
 
 
 
