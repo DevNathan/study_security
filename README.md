@@ -574,6 +574,52 @@
    	hydra -L crunch -p 123456 -s 2121 ftp://192.168.204.101 -V -f
 
 ### 3-4 스푸핑(Spoofing)
+1) ARP 스푸핑
+<img width="472" alt="스크린샷 2023-11-24 195554" src="https://github.com/DevNathan/study_security/assets/142222091/d0f47b13-e7a9-41e4-a83b-575ace82aaf5">
+
+		MITA(혹은 MITM, 중간자 공격)의 일종으로,
+		LAN에서 사용하는 ARP 프로토콜의 허점을 이용하여 자신의 MAC 주소를
+		다른 사용자의 MAC 주소인 것처럼 속이는 공격이다.
+		ARP Cache 정보를 임의로 변조한다고 하여
+		ARP Cache Poisoning 공격이라고도 한다.
+
+		ARP 공격을 성공시키면 공격당한 상대는 인터넷이 안되는 등의
+		문제가 일어나게 된다. 이렇기에 ARP 스푸핑은 적극적 공격에 해당한다.		
+
+		보통은 게이트웨이로 드나드는 모든 패킷을 스니핑하기 위해 게이트웨이
+		주소를 변조시킨다.
+
+		단순 ARP 스푸핑만 하게될 시 인터넷자체가 안되게 되므로 상대방이 눈치채기 쉽다.
+		fragrouter를 이용하여 상대방의 패킷을 스니핑하고 다시 돌려줌으로서
+		상대방이 네트워크 통신에 문제를 느끼지 않게 끔 만들어 줄 수도 있다.
+
+		1. ARP table 확인 방법
+   			arp -a
+		2. ARP Spoofing 공격
+   			arpspoof [상대 IP 주소] -t [변조하고자하는 IP]
+   		3. IP Forwarding(패킷 재전송)
+   			fragrouter -B1
+
+2) DNS 스푸핑
+
+		MITA(혹은 MITM, 중간자 공격)의 일종으로,
+		DNS 서버로 보내는 요청을 가로채서 변조된 결과를 보내주는 공격이다.
+
+		1. hosts 파일 변경
+   		2. DNS 스푸핑 도구 활용
+   			dnsspoof [인터페이스] -f [hosts 파일]
+   		3. ettercap 도구 활용
+   			텍스트 모드, 그래픽 모드가 있으며
+			ARP, DNS 스푸핑이 동시에 가능하다.
+
+   			실행
+   			ettercap -G = 그래픽 모드 실행
+
+   			파일 수정
+			/etc/ettercap/etter.dns
+			예) www.naver.com A 192.168.-.-
+		4. 가짜 사이트 유도/개인정보 탈취
+
 
 
 ## 3. 시스템 보안
