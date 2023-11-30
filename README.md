@@ -33,7 +33,7 @@
    > 3-1 [정보 수집(Information Gathering)](#3-1-정보수집information-gathering)<br>
    > 3-2 [Scanning(TCP PORTSCAN)](#3-2-scanningtcp-portscan)<br>
    > 3-3 [패스워드 공격](#3-3-패스워드-공격)<br>
-   > 3-4 [스푸핑(Spoofing)](#3-4-스푸핑spoofing)
+   > 3-4 [스푸핑(Spoofing)](#3-4-스푸핑spoofing)<br>
    > 3-5 [패킷 스니핑(Sniffing)](#3-5-패킷-스니핑sniffing)
 4. 시스템 보안
 5. 웹 보안
@@ -575,6 +575,9 @@
    	hydra -L crunch -p 123456 -s 2121 ftp://192.168.204.101 -V -f
 
 ### 3-4 스푸핑(Spoofing)
+	공격(해킹) 기법의 일종으로 말그대로 변조를 하여 대상자를 공격하는 행위이다.
+ 	적극적 공격에 해당한다.
+  
 1) ARP 스푸핑
 <img width="472" alt="스크린샷 2023-11-24 195554" src="https://github.com/DevNathan/study_security/assets/142222091/d0f47b13-e7a9-41e4-a83b-575ace82aaf5">
 
@@ -623,9 +626,29 @@
 			setoolkit
 
 ### 3-5 패킷 스니핑(Sniffing)
+	공격(해킹) 기법의 일종으로 자신의 것이 아닌 다른 상대방의 
+ 	패킷을 엿듣거나 훔쳐보는 것을 의미한다.
+  	다양한 공격 기법들 중, 유일하게 소극적 공격(Passive Attack)에 해당한다.
 
+   	패킷 스니핑을 하기 위해서는 우선 ARP Spoofing을 해줘야 한다. 
 
+ 1) URL 스니핑
 
+		urlsnarf [인터페이스]
+
+		피해자가 접속하는 모든 url을 확인할 수 있다.
+
+2) image 스니핑
+
+		driftnet [인터페이스]
+
+		피해자가 보는 이미지 파일들을 보여준다.
+
+3) tcpdump -i [인터페이스] [파일이름] -s [패킷 크기] [패킷 타입] port [포트번호]
+
+   		해당 포트로 통신되는 패킷 타입들을 최대 패킷크기 만큼 파일로 저장한다.
+
+		해당 파일은 단순한 텍스트파일이 아니므로 wireshark등을 통해서 패킷을 조회해야한다.
 
 ## 3. 시스템 보안
 
