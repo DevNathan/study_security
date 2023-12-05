@@ -709,10 +709,10 @@
 1. SYN Flooding
 <img width="574" alt="스크린샷 2023-12-05 113644" src="https://github.com/DevNathan/study_security/assets/142222091/30fd399a-5a05-4f6a-87b4-52ffd33ec1dd">
 
-		TCP 3way Handshake에서의 취약점(빠른 속도의 연결)을 이용하여 공격한다.
-		위 사진과 같이 TCP 연결이 이루어지는데, 이때 맨 처음의 SYN 패킷의 SRC.IP를
-		비워놓거나 존재하지 않는 IP로 변조하게 되면 대상 서버는 엉뚱한 곳으로 SYN+ACK 패킷을
-		보내게 되니 결과적으로 마지막 ACK를 돌려받지 못하게 되는 결과가 나타난다.
+	TCP 3way Handshake에서의 취약점(빠른 속도의 연결)을 이용하여 공격한다.
+	위 사진과 같이 TCP 연결이 이루어지는데, 이때 맨 처음의 SYN 패킷의 SRC.IP를
+	비워놓거나 존재하지 않는 IP로 변조하게 되면 대상 서버는 엉뚱한 곳으로 SYN+ACK 패킷을
+	보내게 되니 결과적으로 마지막 ACK를 돌려받지 못하게 되는 결과가 나타난다.
 
 		
 
