@@ -34,7 +34,7 @@
    > 3-2 [Scanning(TCP PORTSCAN)](#3-2-scanningtcp-portscan)<br>
    > 3-3 [패스워드 공격](#3-3-패스워드-공격)<br>
    > 3-4 [스푸핑(Spoofing)](#3-4-스푸핑spoofing)<br>
-   > 3-5 [패킷 스니핑(Sniffing)](#3-5-패킷-스니핑sniffing)
+   > 3-5 [패킷 스니핑(Sniffing)](#3-5-패킷-스니핑sniffing)<br>
    > 3-6 [DoS/DDoS(서비스 거부 공격) 공격](#3-6-dosddos서비스-거부-공격-공격)
 4. 시스템 보안
 5. 웹 보안
@@ -693,6 +693,31 @@
    			tcp.flags.reset == 리셋 패킷을 조회한다.
 
 ### 3-6 DoS/DDoS(서비스 거부 공격) 공격
+	서비스를 사용하지 못하도록 방해하는 공격이다. 정확히는 '자원'을 고갈 시켜
+ 	사용하지 못하도록 하는 공격이다. 이 '자원'은 네트워크 차원(대역폭 고갈)의 네트워크 기반 공격이
+  	될 수도 있고 시스템 차원(CPU, Memory, Disk, Process)의 시스템 기반 공격이 될 수 있다.
+
+   	DoS 공격은 공격이 쉬운 것에 반해 방어측에서 공격자를 찾아내기 어려우며 방어하기 또한
+    	어렵다는 것이 특징이다.
+
+#### DoS 공격과 DDoS 공격의 차이
+	1) DoS : 여러명의 공격자가 한 피해자를 공격하는 것
+	2) DDoS : 공격자(attacker)가 여러 개의 master에게 명령, master는 수많은 
+ 		slave들을 통해 명령, slave들은 agent(좀비pc)들을 통해 명령, 대상자에게 일제히 공격
+
+#### DoS 공격의 종류
+1. SYN Flooding
+<img width="574" alt="스크린샷 2023-12-05 113644" src="https://github.com/DevNathan/study_security/assets/142222091/30fd399a-5a05-4f6a-87b4-52ffd33ec1dd">
+
+		TCP 3way Handshake에서의 취약점(빠른 속도의 연결)을 이용하여 공격한다.
+		위 사진과 같이 TCP 연결이 이루어지는데, 이때 맨 처음의 SYN 패킷의 SRC.IP를
+		비워놓거나 존재하지 않는 IP로 변조하게 되면 대상 서버는 엉뚱한 곳으로 SYN+ACK 패킷을
+		보내게 되니 결과적으로 마지막 ACK를 돌려받지 못하게 되는 결과가 나타난다.
+
+		
+
+
+
 	
 
 ## 3. 시스템 보안
