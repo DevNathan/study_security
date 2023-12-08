@@ -446,9 +446,27 @@
  
 *** 
 ### 2-6 TCP 통신연결 과정
-### TCP 3-Way Handshake(빠름)
+	TCP는 장치들 사이에 논리적인 접속을 성립시키기 위해 통신을 구축하는데, 이때 크게 두가지 방식이 있다.
+ 	3-way와 4-way이다.
 
-### TCP 4-way Handshake(신뢰성)
+### TCP 3-Way Handshake
+![what-is-a-tcp-3-way-handshake-process-three-way-handshaking-establishing-connection-6a724e77ba96e241](https://github.com/DevNathan/study_security/assets/142222091/3b221676-ce87-449f-b1b5-bd61131112d5)
+
+	TCP 3-way Handshake는 빠른 연결 수립에 초점이 맞춰져 있다.
+ 
+	[STEP 1]
+ 	A클라이언트는 B서버에 접속을 요청하는 SYN 패킷을 보낸다. 
+	이때 A클라이언트는 SYN 을 보내고 SYN/ACK 응답을 기다리는SYN_SENT 상태가 되는 것이다. 
+  	[STEP 2] 
+   	B서버는 SYN요청을 받고 A클라이언트에게 요청을 수락한다는 ACK 와 SYN flag 가 설정된 패킷을 발송하고 
+	A가 다시 ACK으로 응답하기를 기다린다. 이때 B서버는 SYN_RECEIVED 상태가 된다. 
+    	[STEP 3]
+	A클라이언트는 B서버에게 ACK을 보내고 이후로부터는 연결이 이루어지고 데이터가 오가게 되는것이다. 
+	이때의 B서버 상태가 ESTABLISHED 이다.
+
+### TCP 4-way Handshake
+
+
 
 ### TCP 3-WAY Handshake + SSL/TLS
 
