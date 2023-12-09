@@ -468,7 +468,16 @@
  	4-way 방식으로 통신을 종료하는 것이 이상적이다.
 
 ### TCP 4-way Handshake
+![image](https://github.com/DevNathan/study_security/assets/142222091/e91d43f9-cf6a-408a-a17b-ef3be2533950)
 
+	TCP 4-way Handshake는 신뢰성이 높은 연결 종료에 초점이 맞춰져 있다.
+
+	[STEP 1]
+	클라이언트가 연결을 종료하겠다는 FIN플래그를 전송한다.
+ 	[STEP 2] 
+  	서버는 일단 확인메시지를 보내고 자신의 통신이 끝날때까지 기다리는데 이 상태가 TIME_WAIT상태다. 
+  	[STEP 3]
+   	서버가 통신이 끝났으면 연결이 종료되었다고 클라이언트에게 FIN플래그를 전송한다. [STEP 4]클라이언트는 확인했다는 메시지를 보낸다.
 
 
 ### TCP 3-WAY Handshake + SSL/TLS
